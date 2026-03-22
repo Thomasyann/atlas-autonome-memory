@@ -1,6 +1,6 @@
 # active_context.md
 
-version: 1.1
+version: 1.2
 status: active
 scope: live_project_state
 priority: medium
@@ -45,7 +45,8 @@ Créer une architecture mémoire claire, exploitable et évolutive, capable de :
 - éviter les pertes d’information critiques,
 - permettre une personnalisation cohérente,
 - structurer les projets suivis dans le temps,
-- soutenir une spécialisation progressive selon les besoins réellement rencontrés.
+- soutenir une spécialisation progressive selon les besoins réellement rencontrés,
+- construire une mémoire alimentée par la conversation en cours avec l’utilisateur identifié, sans logique de surveillance transversale.
 
 ---
 
@@ -62,21 +63,23 @@ Le projet a déjà franchi plusieurs étapes structurantes.
   2. adapter la réponse selon son profil,
 - `rules.md` a été validé dans une version consolidée,
 - `profile.md` a été validé dans une version consolidée,
+- `memory_doctrine.md` a été rédigé comme logique d’extraction et de stabilisation de la mémoire,
 - le rôle de `active_context.md` a été clarifié,
 - un template de fiche utilisateur a été rédigé,
-- plusieurs fiches utilisateurs ont déjà été produites.
+- les cinq fiches utilisateurs ont été produites.
 
 ### Fichiers déjà cadrés ou rédigés
 
 - `rules.md` : validé
 - `profile.md` : validé
-- `active_context.md` : à intégrer
+- `memory_doctrine.md` : validé
+- `active_context.md` : à harmoniser / maintenir
 - `users/<prenom>.md` : template défini
 - `users/yann.md` : rédigé
 - `users/maxime.md` : rédigé
 - `users/loic.md` : rédigé
 - `users/valentin.md` : rédigé
-- `users/blandine.md` : encore à rédiger
+- `users/blandine.md` : rédigé
 
 ---
 
@@ -84,12 +87,13 @@ Le projet a déjà franchi plusieurs étapes structurantes.
 
 1. `rules.md`
 2. `profile.md`
-3. `active_context.md`
-4. fiches utilisateurs
-5. fichiers projets / logs / sessions selon la structure finale retenue
+3. `memory_doctrine.md`
+4. `active_context.md`
+5. fiches utilisateurs
+6. fichiers projets / logs selon les besoins réels
 
 Cet ordre reste valide.
-Les fiches utilisateurs ont déjà commencé avant finalisation complète du noyau, ce qui reste acceptable tant que l’ensemble est ensuite harmonisé.
+Les fiches utilisateurs ont été rédigées avant harmonisation complète finale, ce qui reste acceptable tant que l’ensemble est ensuite aligné.
 
 ---
 
@@ -101,7 +105,8 @@ La priorité reste :
 - une ossature claire,
 - des fichiers réellement distincts dans leur fonction,
 - une architecture mémoire exploitable,
-- une reprise fiable des projets et utilisateurs.
+- une reprise fiable des projets et utilisateurs,
+- une alimentation de la mémoire qui ne repose pas sur la surveillance manuelle des conversations d’autres membres de la famille.
 
 Principe directeur :
 **structure utile avant sophistication.**
@@ -120,12 +125,20 @@ Atlas doit adapter sa réponse selon l’utilisateur identifié, sans perdre son
 La mémoire doit rester sélective, structurée et utile.
 Elle ne doit pas devenir un stockage indiscriminé.
 
+### Doctrine mémoire
+Atlas doit être capable d’extraire dans l’échange présent les informations utiles à la relation, en distinguant :
+- signal faible,
+- hypothèse relationnelle,
+- tendance probable,
+- trait durable.
+
 ### Continuité
 Un projet doit pouvoir être repris sans repartir de zéro.
 
 ### Hiérarchie des fichiers
 `rules.md` commande la logique générale.  
 `profile.md` fixe l’identité stable.  
+`memory_doctrine.md` définit la logique d’apprentissage relationnel.  
 `active_context.md` suit le chantier vivant.  
 Les fiches utilisateurs portent la personnalisation fine.
 
@@ -133,31 +146,33 @@ Les fiches utilisateurs portent la personnalisation fine.
 
 ## Point actuellement en cours
 
-Stabiliser et intégrer `active_context.md` dans le repo comme fichier de suivi opérationnel.
+Passe d’harmonisation croisée du noyau du système.
 
-Le point à préserver :
-ce fichier doit suivre l’état réel du chantier, sans redéfinir ni la philosophie générale du projet ni l’identité d’Atlas.
+Objectif :
+vérifier que `rules.md`, `profile.md`, `memory_doctrine.md`, `active_context.md` et les fiches utilisateurs racontent exactement la même architecture, sans doublons ni contradictions.
 
 ---
 
 ## Prochaine étape utile
 
-Après intégration de `active_context.md` :
+Après harmonisation finale :
 
-1. rédiger `users/blandine.md` ;
-2. harmoniser les fiches utilisateurs déjà produites ;
-3. préparer la structure des fichiers annexes (`sessions`, `summaries`, `logs`) selon l’usage réel.
+1. maintenir les fichiers noyaux stables ;
+2. définir éventuellement une structure minimale de `logs/` pour les aspects techniques uniquement ;
+3. laisser `sessions/` et `summaries/` hors du cœur du système tant qu’un besoin réel et moralement propre ne justifie pas leur retour ;
+4. commencer à tester la logique réelle d’enrichissement mémoire à partir des conversations en cours avec les utilisateurs identifiés.
 
 ---
 
 ## Points de vigilance
 
-- ne pas mélanger règles globales, identité Atlas, contexte actif et profils utilisateurs,
+- ne pas mélanger règles globales, identité Atlas, logique mémoire, contexte actif et profils utilisateurs,
 - ne pas surcharger un fichier avec plusieurs fonctions,
 - ne pas figer trop tôt les utilisateurs dans des descriptions rigides,
 - ne pas confondre mémoire utile et accumulation de détails,
+- ne pas recréer une logique assimilable à de la surveillance,
 - garder une architecture simple à maintenir,
-- harmoniser les fichiers déjà rédigés avant extension du système.
+- harmoniser les formulations avant toute nouvelle extension.
 
 ---
 
@@ -171,14 +186,15 @@ Ce qui est déjà bien posé :
 - structure générale de la mémoire,
 - `rules.md`,
 - `profile.md`,
+- `memory_doctrine.md`,
+- `active_context.md`,
 - template des fiches utilisateurs,
-- plusieurs profils utilisateurs rédigés.
+- cinq profils utilisateurs rédigés.
 
 Ce qui reste à consolider immédiatement :
-- intégration de `active_context.md`,
-- rédaction de `users/blandine.md`,
-- harmonisation des fiches existantes,
-- préparation des fichiers annexes.
+- harmonisation fine entre les fichiers,
+- clarification éventuelle du rôle minimal de `logs/`,
+- mise en pratique progressive de la doctrine mémoire dans les échanges réels.
 
 ---
 
@@ -188,16 +204,16 @@ Projet en cours :
 mémoire externe Atlas
 
 But actuel :
-stabiliser le noyau du système et aligner les fichiers déjà produits
+stabiliser le noyau du système et harmoniser les fichiers déjà produits
 
 Étape actuelle :
-intégration de `active_context.md`
+passe d’harmonisation croisée
 
 Étape suivante :
-création de `users/blandine.md`
+éventuelle structure minimale de `logs/` puis test réel de l’enrichissement mémoire dans les conversations identifiées
 
 Risque principal :
-produire des fichiers intéressants mais insuffisamment harmonisés entre eux
+produire des fichiers cohérents séparément mais encore légèrement désalignés entre eux
 
 Ligne de conduite :
 faire peu, mais propre, distinct, réutilisable et durable
