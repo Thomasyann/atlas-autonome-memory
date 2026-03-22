@@ -1,6 +1,6 @@
 # active_context.md
 
-version: 1.2
+version: 1.3
 status: active
 scope: live_project_state
 priority: medium
@@ -64,6 +64,7 @@ Le projet a déjà franchi plusieurs étapes structurantes.
 - `rules.md` a été validé dans une version consolidée,
 - `profile.md` a été validé dans une version consolidée,
 - `memory_doctrine.md` a été rédigé comme logique d’extraction et de stabilisation de la mémoire,
+- `workflow.md` a été rédigé comme description du cycle opérationnel réel d’Atlas,
 - le rôle de `active_context.md` a été clarifié,
 - un template de fiche utilisateur a été rédigé,
 - les cinq fiches utilisateurs ont été produites.
@@ -73,6 +74,7 @@ Le projet a déjà franchi plusieurs étapes structurantes.
 - `rules.md` : validé
 - `profile.md` : validé
 - `memory_doctrine.md` : validé
+- `workflow.md` : rédigé
 - `active_context.md` : à harmoniser / maintenir
 - `users/<prenom>.md` : template défini
 - `users/yann.md` : rédigé
@@ -90,7 +92,8 @@ Le projet a déjà franchi plusieurs étapes structurantes.
 3. `memory_doctrine.md`
 4. `active_context.md`
 5. fiches utilisateurs
-6. fichiers projets / logs selon les besoins réels
+6. `workflow.md`
+7. fichiers projets / logs selon les besoins réels
 
 Cet ordre reste valide.
 Les fiches utilisateurs ont été rédigées avant harmonisation complète finale, ce qui reste acceptable tant que l’ensemble est ensuite aligné.
@@ -132,6 +135,15 @@ Atlas doit être capable d’extraire dans l’échange présent les information
 - tendance probable,
 - trait durable.
 
+### Workflow
+Atlas doit suivre un cycle opérationnel stable :
+- identifier,
+- charger les bons repères,
+- conduire l’échange,
+- observer,
+- classer,
+- décider d’une éventuelle mise à jour.
+
 ### Continuité
 Un projet doit pouvoir être repris sans repartir de zéro.
 
@@ -140,6 +152,7 @@ Un projet doit pouvoir être repris sans repartir de zéro.
 `profile.md` fixe l’identité stable.  
 `memory_doctrine.md` définit la logique d’apprentissage relationnel.  
 `active_context.md` suit le chantier vivant.  
+`workflow.md` décrit le cycle opérationnel.  
 Les fiches utilisateurs portent la personnalisation fine.
 
 ---
@@ -149,7 +162,7 @@ Les fiches utilisateurs portent la personnalisation fine.
 Passe d’harmonisation croisée du noyau du système.
 
 Objectif :
-vérifier que `rules.md`, `profile.md`, `memory_doctrine.md`, `active_context.md` et les fiches utilisateurs racontent exactement la même architecture, sans doublons ni contradictions.
+vérifier que `rules.md`, `profile.md`, `memory_doctrine.md`, `workflow.md`, `active_context.md` et les fiches utilisateurs racontent exactement la même architecture, sans doublons ni contradictions.
 
 ---
 
@@ -166,7 +179,7 @@ Après harmonisation finale :
 
 ## Points de vigilance
 
-- ne pas mélanger règles globales, identité Atlas, logique mémoire, contexte actif et profils utilisateurs,
+- ne pas mélanger règles globales, identité Atlas, logique mémoire, contexte actif, workflow et profils utilisateurs,
 - ne pas surcharger un fichier avec plusieurs fonctions,
 - ne pas figer trop tôt les utilisateurs dans des descriptions rigides,
 - ne pas confondre mémoire utile et accumulation de détails,
@@ -187,6 +200,7 @@ Ce qui est déjà bien posé :
 - `rules.md`,
 - `profile.md`,
 - `memory_doctrine.md`,
+- `workflow.md`,
 - `active_context.md`,
 - template des fiches utilisateurs,
 - cinq profils utilisateurs rédigés.
